@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booklist App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title mt-5">Add Book</h1>
+      <div class="alert alert-success bg-success text-white mt-4 d-none">
+        Book successfully added!
+      </div>
+      <div class="alert alert-failure bg-danger text-white d-none mt-4">
+        Please enter a valid book
+      </div>
+
+      <form id="book-form">
+        <label for="book" class="form-label mt-4 book-label">Book Title</label>
+        <input type="text" class="form-control book-title" />
+
+        <label for="author" class="form-label mt-4 author-label">Author</label>
+        <input type="text" class="form-control book-author" />
+
+        <label for="author" class="form-label mt-4 isbn-label">ISBN</label>
+        <input type="text" class="form-control book-isbn" />
+
+        <input
+          type="submit"
+          class="btn submit-btn btn-outline-dark mt-4 mb-4"
+          value="Submit"
+        />
+      </form>
+
+      <div class="added-book-area mt-5">
+        <table class="table table-responsive book-table">
+          <thead class="thead-dark">
+            <tr class="book-information-row">
+              <th class="title-section" scope="col">Title</th>
+              <th class="author-section" scope="col">Author</th>
+              <th class="ibsn-section" scope="col">IBSN</th>
+            </tr>
+          </thead>
+          <tbody class="book-content"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

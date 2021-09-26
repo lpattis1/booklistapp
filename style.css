@@ -1,0 +1,16 @@
+.book-information-row {
+  border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+.table th {
+  border: none;
+}
+
+.delete-item {
+  color: red;
+  cursor: pointer;
+}
+
+.delete-item:hover {
+  color: rgb(233, 2, 2);
+}
